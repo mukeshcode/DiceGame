@@ -1,0 +1,118 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color:rgb(69 68 68);
+  font-family: 'Pacifico', cursive;
+}
+
+header{
+  font-size: 4rem;
+  text-align: center;
+  color: #81f436;
+}
+
+.firstSection{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  color: #81f436;
+  font-family: 'Kalam', cursive;
+}
+
+.firstSection .dice{
+  flex-basis: 15%;
+}
+.firstSection .dice p{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.firstSection img{
+  width: 100%;
+}
+
+
+.secondSection{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.inputs{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.inputs input{
+  flex-basis: 15%;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.2rem;
+  font-family: 'Kalam', cursive;
+  border-radius: 10px;
+  border: none;
+}
+
+.buttons button{
+  border-radius: 50%;
+  font-size: 4rem;
+  border: none;
+  padding: 1.5rem;
+  background-color: rgb(139 139 139 / 25%);
+  font-family: 'Kalam', cursive;
+  cursor: pointer;
+  color: red;
+}
+
+.buttons button:hover{
+  background-color: rgb(139 139 139 / 35%);;
+}
+
+footer{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width : 1200px){
+  .buttons button{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width : 768px){
+  header{
+    font-size: 3rem;
+  }
+  .buttons button{
+    padding: 1rem;
+  }
+  .firstSection .dice, .inputs input{
+    flex-basis: 20%;
+  }
+}
+
+@media (max-width : 576px){
+  header{
+    margin: 0 0.5rem;
+  }
+  header .player1, header .player2, header .vs{
+    font-size: 4rem;
+    display: block;
+    line-height: 150%;
+  }
+
+  .firstSection .dice, .secondSection .inputs input{
+    flex-basis: 35%;
+  }
+
+  .buttons button{
+    font-size: 2.5rem;
+  }
+}

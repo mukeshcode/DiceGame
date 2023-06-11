@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game</title>
+  <link rel="icon" href="./assets/6.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Pacifico&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <span class="player1">Player 1</span><span class="vs"> vs. </span><span class="player2">Player 2</span>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="dice firstDice">
+        <p class="player1">Player 1</p>
+        <img src="./assets/3.png" alt="first dice" class="dice1" />
+      </div>
+      <div class="dice secondDice">
+        <p class="player2">Player 2</p>
+        <img src="./assets/5.png" alt="second dice" class="dice2" />
+      </div>
+    </section>
+
+    <section class="secondSection">
+      <div class="inputs">
+        <input type="text" class="firstPlayer" placeholder="Player 1" maxlength="10">
+        <input type="text" class="secondPlayer" placeholder="Player 2" maxlength="10">
+      </div>
+      <div class="buttons">
+        <button onclick="shakeDice()">👋</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &#169; www.2023diceGame.com
+    <audio src="assets/diceShake.mp3" class="diceShake"> </audio>
+    <audio src="assets/rollingDice.mp3" class="diceThrow"></audio>
+  </footer>
+
+  <script src="./script/index.js" charset="UTF-8"></script>
+</body>
+
+</html>
+
+<!--Todo 1 : Change the .player1 and .player2 to with the input elements-->
